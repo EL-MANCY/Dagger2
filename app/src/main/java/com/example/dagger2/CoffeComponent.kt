@@ -1,8 +1,10 @@
 package com.example.dagger2
 
 import dagger.Component
+import dagger.hilt.DefineComponent
+import javax.inject.Singleton
 
-@Component
+@Component(modules = [CoffeeModule::class])
 interface CoffeComponent {
     fun getCoffe():Coffe
 
